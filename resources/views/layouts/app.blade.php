@@ -76,7 +76,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
