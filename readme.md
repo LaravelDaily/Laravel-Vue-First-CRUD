@@ -1,4 +1,4 @@
-## Laravel 5.5 + Vue.js - Simple CRUD Demo
+## Laravel 5.6 + Vue.js - Simple CRUD Demo
 
 Simple project showing how Laravel works with Vue.js.
 
