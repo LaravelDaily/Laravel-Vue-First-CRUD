@@ -2,7 +2,7 @@
 <template>
     <div>
         <div class="form-group">
-            <router-link to="/" class="btn btn-default">Back</router-link>
+            <router-link to="/admin/companies" class="btn btn-default">Back</router-link>
         </div>
 
         <div class="panel panel-default">
@@ -75,7 +75,7 @@
                 var newCompany = app.company;
                 axios.patch('/api/v1/companies/' + app.companyId, newCompany)
                     .then(function (resp) {
-                        app.$router.replace('/');
+                        app.$router.replace('/admin/companies');
                     })
                     .catch(function (resp) {
                         console.log(resp);
