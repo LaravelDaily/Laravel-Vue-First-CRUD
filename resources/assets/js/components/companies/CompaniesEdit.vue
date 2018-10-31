@@ -8,7 +8,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">Edit company</div>
             <div class="panel-body">
-                <form v-on:submit="saveForm()">
+                <form v-on:submit.prevent="saveForm()">
                     <div class="row">
                         <div class="col-xs-12 form-group">
                             <label class="control-label">Company name</label>
@@ -75,7 +75,7 @@
                 var newCompany = app.company;
                 axios.patch('/api/v1/companies/' + app.companyId, newCompany)
                     .then(function (resp) {
-                        app.$router.replace('/admin/companies');
+                        app.$router.push({path: '/admin/companies'});
                     })
                     .catch(function (resp) {
                         console.log(resp);
